@@ -4,6 +4,7 @@ import SigninForm from "./_auth/forms/SigninForm";
 import { Home } from "./_root/pages";
 import "./globals.css";
 import { Routes, Route } from "react-router-dom";
+import { Toaster } from "@/components/ui/toaster"
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
         {/* Private routes */}
         <Route path="home" element={<Home />} />
       </Routes>
+      <Toaster/>
     </main>
   );
 };
